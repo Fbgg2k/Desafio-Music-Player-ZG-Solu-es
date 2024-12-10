@@ -1,0 +1,112 @@
+/* Definição da animação */
+@keyframes play-pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* Classe animada */
+.playing-animation {
+  animation: play-pulse 1s infinite;
+  /* Animação contínua */
+}
+
+/* Estilo para o contêiner do player */
+.player-container {
+  background-color: #fff; /* Cor de fundo do contêiner */
+  border: 2px solid #ccc; /* Borda do contêiner */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor do contêiner */
+  border-radius: 8px; /* Cantos arredondados */
+  padding: 1rem; /* Espaçamento interno */
+  padding-bottom: 460px;
+  padding-top: 30px;
+  text-align: center; /* Centraliza o texto */
+  margin-top: 80px !important; /* Espaçamento superior garantido */
+  margin-bottom: 5px; /* Espaçamento inferior */
+  width: 60%;
+  max-width: 600px; /* Largura máxima do contêiner */
+  height: 60%;
+  max-height: 400px;
+  margin: 0 auto; /* Centraliza o contêiner */
+  min-height: 450px; /* Altura mínima do contêiner */
+}
+
+/* Estilo para o contêiner dos botões */
+.button-container {
+  display: flex;
+  justify-content: space-around; /* Ajusta a posição dos botões */
+  align-items: center;
+  padding: 27px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 5px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 300px;
+  width: 45%;
+  max-width: 175px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  height: 15%;
+  max-height: 60px;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px
+}
+
+/* Estilo para os botões de controle */
+.control-button {
+  background-color: #4a5568; /* Cor do fundo dos botões */
+  color: white;
+  border: 2px solid #2d3748; /* Borda dos botões */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra dos botões */
+  transition: transform 0.2s ease, background-color 0.3s ease; /* Transições suaves */
+  text-align: center;
+  padding: 1rem 0.5rem; /* Espaçamento interno dos botões */
+}
+
+.control-button:hover {
+  background-color: #2d3748; /* Cor de fundo ao passar o mouse */
+  transform: scale(1.1); /* Efeito de crescimento ao passar o mouse */
+}
+
+/* Ocultar todos os controles padrão do player */
+audio {
+  all: unset; /* Remove o estilo padrão */
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Ocultar botões individuais do Webkit */
+audio::-webkit-media-controls-play-button {
+  display: none;
+}
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+
+/* Alterar apenas o tamanho ou cor de elementos */
+audio::-webkit-media-controls-panel,
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  font-size: 14px; /* Ajuste do tamanho da fonte */
+  
+}

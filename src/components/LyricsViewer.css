@@ -1,0 +1,57 @@
+/* Linha padrão (não destacada) */
+.line {
+  opacity: 0.1; /* Opacidade reduzida */
+  font-size: 0.9rem; /* Aumenta o tamanho das letras para a linha padrão */
+  color: rgba(200, 200, 200, 0.3); /* Cinza claro translúcido */
+  transition: all 0.3s ease-in-out; /* Suavidade nas transições */
+  margin-top: 20px; /* Espaçamento superior */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  color: rgba(200, 200, 200, 0.3); /* Cinza claro translúcido */
+  filter: blur(1px); /* Aplica um leve desfoque */
+
+}
+
+/* Linha destacada */
+.line-active {
+  opacity: 1; /* Opacidade total */
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte ainda mais */
+  font-weight: bold; /* Deixa o texto em negrito */
+  color: #1a202c; /* Garante maior contraste */
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efeito de brilho */
+  transition: all 0.3s ease-in-out; /* Suavidade na transição */
+}
+
+/* Estilo do container para as letras */
+.scrollbar-none::-webkit-scrollbar {
+  display: none; /* Oculta a barra de rolagem */
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE e Edge */
+}
+
+.lyrics-container {
+  font-family: 'Arial', sans-serif; /* Fonte limpa e legível */
+  background-color: #f7fafc; /* Fundo claro para contraste */
+  padding: 1.5rem; /* Espaçamento interno */
+  border-radius: 8px; /* Cantos arredondados */
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor */
+  width: 80%; /* Define a largura do container */
+  max-width: 450px; /* Define a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+  margin-top: 35px; /* Espaçamento superior */
+  margin-bottom: 40px; /* Espaçamento inferior */
+  text-align: center; /* Centraliza o texto */
+  padding-top: 40px; /* Espaçamento interno superior */
+  padding-bottom: 40px; /* Espaçamento interno inferior */
+  height: 80%; /* Define a altura do container */
+  max-height: 400px;
+  min-height: 200px;
+  overflow-y: scroll; /* Permite rolagem vertical */
+  overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
+  display: flex; /* Usa flexbox para alinhar o texto */
+  flex-direction: column; /* Alinha o texto em colunas */
+  align-items: center; /* Centraliza o texto horizontalmente */
+  justify-content: center; /* Centraliza o texto verticalmente */
+}

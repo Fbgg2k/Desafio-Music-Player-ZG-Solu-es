@@ -1,6 +1,3 @@
-# Desafio-Music-Player-ZG-Soluções
-Player de musica interativo e intuitivo
-
 ---
 
 # 🎵 **Desafio Music Player - ZG Soluções**
@@ -94,7 +91,7 @@ music-backend/
 
 ### **Clonar o Repositório**
 ```bash
-git clone https://github.com/Fbgg2k/Desafio-Music-Player-ZG-Solu-es.git
+git clone https://github.com/Fbgg2k/Desafio-Music-Player-ZG-Solucoes.git
 ```
 
 ### **Configurar o Backend**

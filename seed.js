@@ -10,7 +10,7 @@ const songs = [
     title: "Erguei as Mãos",  
     artist: "Padre Marcelo Rossi",  
     album: "Canções de Fé",  
-    duration: "4:20",  
+    duration: "4:48",  
     lyrics: [
       //Primeira Parte  
       { text: "Erguei as mãos e dai glória a Deus.", time: 0 },  

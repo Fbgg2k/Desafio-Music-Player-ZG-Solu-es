@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("MONGO_URI")
+}
+
+model Song {
+  id       String  @id @default(auto()) @map("_id") @db.ObjectId
+  title    String
+  artist   String
+  album    String
+  duration String
+  lyrics   Lyric[]
+  audioUrl String
+}
+
+model Lyric {
+  id     String  @id @default(auto()) @map("_id") @db.ObjectId
+  text   String
+  time   Int
+  song   Song    @relation(fields: [songId], references: [id])
+  songId String  @db.ObjectId
+}
